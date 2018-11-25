@@ -72,8 +72,8 @@ def get_product(product_id):
 
     if json_exists(attributes, "TX_PAKMER"): # TX_PAKMER = Packaging emblems
         packaging_properties = attributes["TX_PAKMER"]["value"]
-        possible_packaging_properties = {"Avainlippu": "finlandMade",
-                                         "Hyvää Suomesta (Sininen Joutsen)": "finlandMade",
+        possible_packaging_properties = {"Avainlippu": "Avainlippu",
+                                         "Hyvää Suomesta (Sininen Joutsen)": "Hyvää Suomesta",
                                          "Sydänmerkki": "heartHealthy"
                                          }
         for prop in packaging_properties:
